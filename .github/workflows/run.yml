@@ -28,6 +28,8 @@ jobs:
         env:
             CONFIG: ${{ secrets.CONFIG }}
             AES_KEY: ${{ secrets.AES_KEY }}
+            TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+            TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: |
           pip3 install requests pytz pycryptodome
           python3 main.py
